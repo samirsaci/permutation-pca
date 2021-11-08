@@ -45,7 +45,7 @@ def permutation(data, all_features, stores, d_store_id, baseline_rmse, dict_erro
             # Load Model
             store_name = d_store_id[store]
             # load model
-            filename = FOLDER_MODEL + 'model-' + str(d_store_id[store])+'.pkl'
+            filename = FOLDER_MODEL + 'model-initial-' + str(d_store_id[store])+'.pkl'
             model = joblib.load(filename)
 
             # Compute Prediction
